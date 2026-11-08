@@ -1,5 +1,5 @@
 // Pozwala działać bez internetu. Przy każdej zmianie aplikacji podbij numer wersji.
-const VERSION = 'trening-v1';
+const VERSION = 'trening-v2';
 const FILES = [
   './', './index.html', './styles.css', './plan.js', './app.js', './manifest.webmanifest',
   './icon-192.png', './icon-512.png',

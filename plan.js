@@ -21,7 +21,7 @@ const PLAN = {
         { id: 'd1d2', pl: 'Przywodzenie nóg na maszynie', en: 'Machine Adduction', sets: 3, reps: '8', tempo: '2010', rest: 90, img: ['img/d1d2.png'] },
       ]},
       { id: 'E', ex: [
-        { id: 'd1e', pl: 'Brzuszki na GHD / na ławce skośnej', en: 'GHD Sit Ups / Decline Bench Sit Ups', sets: 3, reps: '8', tempo: '2010', rest: 60, img: ['img/d1e.png', 'img/d1e_alt.png'] },
+        { id: 'd1e', pl: 'Brzuszki na GHD / na ławce skośnej', en: 'GHD Sit Ups / Decline Bench Sit Ups', sets: 3, reps: '8', tempo: '2010', rest: 60, img: ['img/d1e.png', 'img/d1e_alt.png'], bw: true },
       ]},
     ],
   },
@@ -29,11 +29,11 @@ const PLAN = {
     name: 'Dzień 2',
     blocks: [
       { id: 'A', ex: [
-        { id: 'd2a1', pl: 'Prostowanie nóg na maszynie', en: 'Machine Leg Extension', sets: 3, reps: '8', tempo: '2010', rest: 60, img: ['img/d2a1.png'] },
+        { id: 'd2a1', pl: 'Prostowanie nóg na maszynie', en: 'Machine Leg Extension', sets: 3, reps: '8', tempo: '2010', rest: 10, img: ['img/d2a1.png'] },
         { id: 'd2a2', pl: 'Wyciskanie poziome na maszynie', en: 'Machine Horizontal Press', sets: 3, reps: '8', tempo: '2010', rest: 120, img: ['img/d2a2.png'] },
       ]},
       { id: 'B', ex: [
-        { id: 'd2b1', pl: 'Uginanie nóg na maszynie – leżąc', en: 'Machine Hamstring Curl – lying', sets: 3, reps: '10', tempo: '2010', rest: 60, img: ['img/d2b1.png'] },
+        { id: 'd2b1', pl: 'Uginanie nóg na maszynie – leżąc', en: 'Machine Hamstring Curl – lying', sets: 3, reps: '10', tempo: '2010', rest: 10, img: ['img/d2b1.png'] },
         { id: 'd2b2', pl: 'Przyciąganie poziome na maszynie', en: 'Machine Horizontal Pull', sets: 3, reps: '8', tempo: '2010', rest: 120, img: ['img/d2b2.png'] },
       ]},
       { id: 'C', ex: [
@@ -44,7 +44,7 @@ const PLAN = {
         { id: 'd2d2', pl: 'Wspięcia na palce na maszynie', en: 'Machine Calf Raises', sets: 3, reps: '10', tempo: '3010', rest: 90, img: ['img/d2d2.png'] },
       ]},
       { id: 'E', ex: [
-        { id: 'd2e', pl: 'Prostowanie tułowia na GHD', en: 'GHD Back Extension', sets: 3, reps: '8', tempo: '3010', rest: 60, img: ['img/d2e.png'] },
+        { id: 'd2e', pl: 'Prostowanie tułowia na GHD', en: 'GHD Back Extension', sets: 3, reps: '8', tempo: '3010', rest: 60, img: ['img/d2e.png'], bw: true },
       ]},
     ],
   },
