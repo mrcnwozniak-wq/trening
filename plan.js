@@ -3,14 +3,15 @@
 const PLAN = {
   1: {
     name: 'Dzień 1',
+    // Kolejność dnia 1 zmieniona (B przed A) – tak stoją maszyny na siłowni.
     blocks: [
-      { id: 'A', ex: [
-        { id: 'd1a1', pl: 'Wypychanie nóg na maszynie', en: 'Machine Leg Press', sets: 3, reps: '8', tempo: '2010', rest: 10, img: ['img/d1a1.png'] },
-        { id: 'd1a2', pl: 'Rozpiętki na maszynie', en: 'Machine Flyes', sets: 3, reps: '10', tempo: '1010', rest: 120, img: ['img/d1a2.png'] },
-      ]},
       { id: 'B', ex: [
         { id: 'd1b1', pl: 'Wypychanie bioder na maszynie', en: 'Machine Hip Thrust', sets: 3, reps: '8', tempo: '2010', rest: 10, img: ['img/d1b1.png'] },
         { id: 'd1b2', pl: 'Ściąganie na maszynie – szeroki nachwyt', en: 'Machine Pull Down – wide, pronated grip', sets: 3, reps: '8', tempo: '2010', rest: 120, img: ['img/d1b2.png'] },
+      ]},
+      { id: 'A', ex: [
+        { id: 'd1a1', pl: 'Wypychanie nóg na maszynie', en: 'Machine Leg Press', sets: 3, reps: '8', tempo: '2010', rest: 10, img: ['img/d1a1.png'] },
+        { id: 'd1a2', pl: 'Rozpiętki na maszynie', en: 'Machine Flyes', sets: 3, reps: '10', tempo: '1010', rest: 120, img: ['img/d1a2.png'] },
       ]},
       { id: 'C', ex: [
         { id: 'd1c1', pl: 'Uginanie nóg na maszynie – siedząc', en: 'Machine Hamstring Curl – seated', sets: 3, reps: '8', tempo: '2010', rest: 10, img: ['img/d1c1.png'] },

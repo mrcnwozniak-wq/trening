@@ -190,13 +190,9 @@ function renderSetup() {
 function startSession({ date, day, sets }) {
   const id = 's' + Date.now();
   const log = {};
+  // Okienka startują puste; wynik z ostatniego razu widać w nich tylko na szaro.
   PLAN[day].blocks.forEach((b) => b.ex.forEach((ex) => {
-    const prev = lastLog(ex.id);
-    log[ex.id] = Array.from({ length: sets }, (_, i) => {
-      const p = prev ? (prev.sets[i] || prev.sets[prev.sets.length - 1]) : null;
-      const planReps = /^\d+$/.test(ex.reps) ? +ex.reps : null;
-      return { w: ex.bw ? null : (p ? p.w : null), r: p && p.r !== null ? p.r : planReps, done: false };
-    });
+    log[ex.id] = Array.from({ length: sets }, () => ({ w: null, r: null, done: false }));
   }));
   db.sessions.push({ id, created: Date.now(), date, day, sets, log, blockIndex: 0, finished: false });
   saveDb();
@@ -230,7 +226,8 @@ function renderBlock() {
 
   const setRow = (ex, i) => {
     const v = sess.log[ex.id][i];
-    const prev = lasts[ex.id] ? lasts[ex.id].sets[i] : null;
+    const lastSets = lasts[ex.id] ? lasts[ex.id].sets : null;
+    const prev = lastSets ? (lastSets[i] || lastSets[lastSets.length - 1]) : null;
     return `
       <div class="set ${v.done ? 'done' : ''}" data-ex="${ex.id}" data-i="${i}">
         <span class="set-name">${block.id}${block.ex.length > 1 ? block.ex.indexOf(ex) + 1 : ''}</span>
